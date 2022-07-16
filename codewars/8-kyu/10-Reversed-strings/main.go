@@ -7,7 +7,6 @@ func Solution(word string) (result string) {
 		result = string(v) + result
 	}
 	return
-
 }
 
 
@@ -27,8 +26,4 @@ func Solution(word string) (result string) {
 
 func main() {
 	fmt.Println(Solution("teste"))
-	// fmt.Println(Goals(43, 10, 5))
-	// teste := "teste"
-	// byte_str := []rune(teste)
-	// fmt.Println(byte_str)
 }
