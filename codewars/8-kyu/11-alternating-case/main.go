@@ -18,6 +18,7 @@ func ToAlternatingCase(str string) string {
   return string(rs)
 }
 
+// -------TRAINING-------
 // func main() {
 // 	stringi := "HELLO WORLD"
 // 	fmt.Println("string: ", stringi)
