@@ -35,3 +35,4 @@ func main() {
 	fmt.Println(Xor(true, true))
 	fmt.Println(Xor(false, Xor(false, false)))
 }
+
