@@ -1,25 +1,35 @@
-# Count the Digit
+# Baby shark lyrics generator
 
-exercise link: https://www.codewars.com/kata/566fc12495810954b1000030/train/go
-
-Take an integer `n (n >= 0)` and a digit `d (0 <= d <= 9)` as an integer.
-
-Square all numbers `k (0 <= k <= n)` between 0 and n.
-
-Count the numbers of digits `d` used in the writing of all the `k**2`.
-
-Call `nb_dig` (or nbDig or ...) the function taking `n` and `d` as parameters and returning this count.
+Create a function, as short as possible, that returns this lyrics.
+Your code should be less than 300 characters. Watch out for the three points at the end of the song.
 
 ## Examples
 
 ```
-n = 10, d = 1 
-the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
-We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
-
-nb_dig(25, 1) returns 11 since
-the k*k that contain the digit 1 are:
-1, 16, 81, 100, 121, 144, 169, 196, 361, 441.
-So there are 11 digits 1 for the squares of numbers between 0 and 25.
+Baby shark, doo doo doo doo doo doo
+Baby shark, doo doo doo doo doo doo
+Baby shark, doo doo doo doo doo doo
+Baby shark!
+Mommy shark, doo doo doo doo doo doo
+Mommy shark, doo doo doo doo doo doo
+Mommy shark, doo doo doo doo doo doo
+Mommy shark!
+Daddy shark, doo doo doo doo doo doo
+Daddy shark, doo doo doo doo doo doo
+Daddy shark, doo doo doo doo doo doo
+Daddy shark!
+Grandma shark, doo doo doo doo doo doo
+Grandma shark, doo doo doo doo doo doo
+Grandma shark, doo doo doo doo doo doo
+Grandma shark!
+Grandpa shark, doo doo doo doo doo doo
+Grandpa shark, doo doo doo doo doo doo
+Grandpa shark, doo doo doo doo doo doo
+Grandpa shark!
+Let's go hunt, doo doo doo doo doo doo
+Let's go hunt, doo doo doo doo doo doo
+Let's go hunt, doo doo doo doo doo doo
+Let's go hunt!
+Run away,…
 ```
 

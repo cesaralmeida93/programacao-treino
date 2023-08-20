@@ -1,16 +1,46 @@
-# Exclusive "or" (xor) Logical Operator
-
-## Overview
-
-In some scripting languages like PHP, there exists a logical operator (e.g. &&, ||, and, or, etc.) called the "Exclusive Or" (hence the name of this Kata). The exclusive or evaluates two booleans. It then returns true if exactly one of the two expressions are true, false otherwise. For example:
-
-```go
-false xor false == false // since both are false
-true xor false == true // exactly one of the two expressions are true
-false xor true == true // exactly one of the two expressions are true
-true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions evaluate to true.
-```
+# Expressions Matter
 
 ## Task
 
-Since we cannot define keywords in Javascript (well, at least I don't know how to do it), your task is to define a function `xor(a, b)` where a and b are the two expressions to be evaluated. Your xor function should have the behaviour described above, returning true if exactly one of the two expressions evaluate to true, false otherwise.
+- Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+- In other words , try every combination of a,b,c with [*+()] , and return the Maximum Obtained (Read the notes for more detail about it)
+
+## Example
+
+- With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:
+
+```
+1 * (2 + 3) = 5
+1 * 2 * 3 = 6
+1 + 2 * 3 = 7
+(1 + 2) * 3 = 9
+```
+
+- So the maximum value that you can obtain is 9.
+
+## Notes
+
+- The numbers are always positive.
+- The numbers are in the range (1  ≤  a, b, c  ≤  10).
+- You can use the same operation more than once.
+- It's not necessary to place all the signs and brackets.
+- Repetition in numbers may occur .
+- You cannot swap the operands. For instance, in the given example you cannot get expression (1 + 3) * 2 = 8.
+
+## Input >> Output Examples:
+
+```
+expressionsMatter(1,2,3)  ==>  return 9
+```
+
+### Explanation:
+
+- After placing signs and brackets, the Maximum value obtained from the expression (1+2) * 3 = 9.
+
+```
+expressionsMatter(1,1,1)  ==>  return 3
+```
+
+### Explanation:
+
+- After placing signs, the Maximum value obtained from the expression is 1 + 1 + 1 = 3.
