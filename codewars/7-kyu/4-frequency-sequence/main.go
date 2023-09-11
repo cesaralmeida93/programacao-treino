@@ -17,6 +17,7 @@ func FreqSeq(str string, sep string) string {
 
 	for _, value := range str {
 		l := string(value)
+		fmt.Printf("%s: %v\n", l, frequency[l])
 		fmt.Println("frequency[l]:", frequency[l])
 		frequency[l] = frequency[l] + 1
 	}
@@ -61,7 +62,7 @@ func FreqSeq(str string, sep string) string {
 
 func main() {
 	fmt.Println(FreqSeq("hello world", "-"))
-	fmt.Println(FreqSeq("19999999", ":"))
-	fmt.Println(FreqSeq("^^^**$", "x"))
+	// fmt.Println(FreqSeq("19999999", ":"))
+	// fmt.Println(FreqSeq("^^^**$", "x"))
 
 }

@@ -9,7 +9,6 @@ func Solution(word string) (result string) {
 	return
 }
 
-
 //-------TRAINING-------
 // func Solution(word string) (result string) {
 // 	for i, v := range word {
@@ -22,7 +21,7 @@ func Solution(word string) (result string) {
 // 		fmt.Println("")
 // 	}
 // 	return result
-// }
+}
 
 func main() {
 	fmt.Println(Solution("teste"))

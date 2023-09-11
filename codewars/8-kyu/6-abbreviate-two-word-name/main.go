@@ -5,8 +5,12 @@ import (
 	"strings"
 )
 
-func AbbrevName(name string) string{
+func AbbrevName(name string) string {
+	fmt.Println(name)
 	words := strings.Split(name, " ")
+	fmt.Println(words)
+	fmt.Println(len(words))
+	fmt.Println(string(words[0]))
 	fmt.Println(string(words[0][0]))
 	res := ""
 	res += string(words[0][0])
@@ -14,9 +18,8 @@ func AbbrevName(name string) string{
 	res += "."
 	res += string(words[1][0])
 	fmt.Println(string(words[1][0]))
-  return strings.ToUpper(res)
+	return strings.ToUpper(res)
 }
-
 
 //-------TRAINING-------
 // func AbbrevName(name string) string{
